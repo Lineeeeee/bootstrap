@@ -1,0 +1,576 @@
+/*=======reset css=====*/
+body{
+  font-size: 14px;
+  font-family:  "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;;
+  color:#333 ;
+}
+a{
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+img{
+  border:none;
+}
+.clearFix::before,
+.clearFix::after{
+  content: '';
+  display: block;
+  visibility: hidden;
+  height:0;
+  line-height: 0;
+  clear: both;
+}
+/*顶部通栏*/
+@media (min-width: 992px) {
+  .container{
+    width:970px;
+  }
+}
+.usa_nav{
+  padding:15px 0;
+  border-bottom: 2px solid #0ba1e4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255,255,255,0.9);
+  z-index: 1000;
+}
+.usa_nav #mymenu ul.navbar-right{
+  margin-right: 0px;
+}
+.usa_nav #mymenu ul li a{
+  font-size: 16px;
+  color:#777;
+  padding:16px 10px 5px 25px;
+}
+.usa_nav #mymenu ul li.acv a{
+  color: #0ba1e4;
+}
+.usa_nav #mymenu ul li a:hover{
+  color: #0ba1e4;
+}
+.usa_nav #mymenu ul li.acv p{
+  width:18px;
+  height: 1px;
+  background-color: #0ba1e4;
+  margin-left: 30px;
+}
+/*轮播图*/
+.usa_banner{
+  margin-top: 84px;
+}
+.usa_banner .carousel-inner div img{
+  width:100%;
+  height:auto;
+  display: block;
+}
+@media (min-width: 992px)  {
+  .usa_banner .carousel-inner div img{
+    width:1920px;
+    max-width: 1920px;
+  }
+}
+
+/*我们的成绩*/
+.usa_mark .main-title,
+.usa_super .main-title,
+.usa_serve .main-title,
+.usa_custom .main-title,
+.usa_info .main-title,
+.usa_friend .main-title
+{
+  padding-top: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.usa_mark .main-title h2,
+.usa_super .main-title h2,
+.usa_serve .main-title h2,
+.usa_custom .main-title h2,
+.usa_info .main-title h2,
+.usa_friend .main-title h2{
+  font-weight: 300;
+  font-size: 36px;
+}
+.usa_mark .main-title p.line,
+.usa_super .main-title p.line,
+.usa_serve .main-title p.line,
+.usa_custom .main-title p.line,
+.usa_info .main-title p.line,
+.usa_friend .main-title p.line{
+  border-top: 2px solid #0ba1e4;
+  width:80px;
+  margin: 30px auto 26px;
+}
+.usa_mark .main-title h3,
+.usa_super .main-title h3,
+.usa_serve .main-title h3,
+.usa_custom .main-title h3,
+.usa_info .main-title h3,
+.usa_friend .main-title h3{
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 156%;
+  line-height: 1;
+  color: #777;
+}
+.usa_mark .our-data div.data-item{
+  text-align: center;
+}
+.usa_mark .our-data div.data-item h1{
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-size: 70px;
+  color: #0ba1e4;
+  line-height: 1.5em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .usa_mark .our-data div.data-item h1{
+    font-size: 50px;
+    line-height: 1.5em;
+  }
+}
+.usa_mark .our-data div.data-item p{
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight:300;
+  color: #919191;
+}
+/*我们的优势*/
+.usa_super{
+  background-color: #e1e1e1;
+  padding:50px;
+}
+.usa_super .our-data .whyus-item{
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #c1c1c1;
+  padding:10px;
+  transition: all 0.225s ease-in-out;
+}
+.usa_super .our-data .whyus-item:hover{
+  background-color: #0ba1e4;
+  border:1px solid #0ba1e4;
+  box-shadow: 0 0 20px 0 rgba(45,183,245,.5);
+  color: #fff;
+}
+.usa_super .our-data .whyus-item:hover span{
+  color: #fff;
+}
+.usa_super .our-data .whyus-item span{
+  color: #0ba1e4;
+  font-size: 80px;
+  line-height: 1.5em;
+}
+.usa_super .our-data .whyus-item h3{
+  line-height: 1.5em;
+  font-family: inherit;
+  font-weight: 300;
+}
+.usa_super .our-data .whyus-item p{
+  line-height: 1.5em;
+  margin:0 0 10px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .container{
+    width:750px;
+  }
+}
+@media (max-width: 768px){
+  .container{
+    padding-right: 21px;
+  }
+}
+/*我们的服务*/
+.usa_serve .container .card-box{
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.usa_serve .container .serve-data{
+  text-align: center;
+  background-color: #fafafa;
+  border:1px solid #c1c1c1;
+  transition: all 0.3s ease-in-out;
+}
+
+.usa_serve .container div.act{
+  background-color: #0ba1e4;
+  border:1px solid #0ba1e4;
+  box-shadow: 0 0 20px 0 rgba(45,183,245,.5);
+  transform: scale(1.1);
+  color: #fff !important;
+  z-index: 11;
+}
+.usa_serve .container .serve-data .title{
+  padding:20px 0;
+  border-bottom: 1px solid #c1c1c1;
+}
+.usa_serve .container .serve-data .title h4{
+  margin: 0;
+  line-height: 2em;
+  font-weight: bold;
+  color: #0ba1e4;
+}
+.usa_serve .container .serve-data .title h4.act{
+  color: #fff;
+}
+.usa_serve .container .serve-data .title p{
+  margin:0;
+  line-height: 2em;
+}
+.usa_serve .container .serve-data ul{
+  padding:20px;
+  padding-bottom: 30px;
+}
+.usa_serve .container .serve-data ul li{
+ margin:0 0 10px;
+  line-height: 3em;
+}
+.usa_serve .container .serve-data ul li a{
+  padding:8px 18px;
+  color: #0ba1e4;
+  background: transparent;
+  border-color: #0ba1e4;
+}
+.usa_serve .container .serve-data ul li a:hover{
+  background-color: #fff;
+  color:#0ba1e4!important;
+}
+
+.usa_serve .container .serve-data ul li a.act{
+  border-color: #fff;
+  color: #fff;
+}
+.usa_serve .col-xs-12 .more-serve{
+  text-align: center;
+}
+
+.usa_serve .col-xs-12 .more-serve a{
+  margin-top: 60px;
+  color: #0ba1e4;
+  background-color: transparent;
+  border-color: #0ba1e4;
+}
+.usa_serve .col-xs-12 .more-serve a:hover{
+  background-color: #0ba1e4;
+  color: #fff;
+}
+/*客户的鼓励*/
+.usa_custom{
+  background-color: #f5f5f5;
+  padding:50px 0;
+}
+.usa_custom .our-custom{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.usa_custom .our-custom .custom-top{
+  border:1px solid #34a263;
+  border-radius: 4px;
+  padding:40px 10px 10px;
+  position: relative;
+}
+.usa_custom .our-custom .custom-top>img{
+  width:50px;
+  height: 50px;
+  position: absolute;
+  top:-25px;
+  left:50%;
+  margin-left: -25px;
+}
+.usa_custom .our-custom .custom-top p{
+  overflow: hidden;
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.usa_custom .our-custom .custom-top .card{
+  width:96%;
+  position: relative;
+  font-size: 12px;
+}
+.usa_custom .our-custom .custom-top .card>span{
+  float: left;
+  color: #fff;
+  padding:0.5% 3.5%;
+  max-width: 50%;
+  background-color: #aaa;
+}
+.usa_custom .our-custom .custom-top .card>.address{
+  position: relative;
+  float: right;
+  max-width: 50%;
+  overflow: hidden;
+  bottom: -1px;
+  vertical-align: middle;
+}
+.usa_custom .our-custom .custom-top .card>.address img{
+  width:10px;
+  height:10px;
+}
+.usa_custom .our-custom .custom-top .arrow-box{
+  position: absolute;
+  left:50%;
+  margin-left: -11px;
+  bottom:0px;
+}
+.usa_custom .our-custom .custom-top  .bottom-arrow1,.bottom-arrow2{
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  border-bottom:11px transparent dashed;
+  border-left:11px transparent dashed;
+  border-right:11px transparent dashed;
+  border-top:11px white solid;
+  overflow:hidden;
+}
+.usa_custom .our-custom .custom-top .arrow-box .bottom-arrow1{
+  top:1px;/*重要*/
+  border-top:11px solid #34a263;
+}
+.usa_custom .our-custom .custom-top .arrow-box  .bottom-arrow2{
+  border-top:11px solid #f5f5f5;
+}
+.usa_custom .our-custom .custom-bottom{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/yhgl-icon.svg");
+  background-repeat: no-repeat;
+  width:70px;
+  height:70px;
+  background-size: 70px 70px;
+}
+/*美国签证最新资讯*/
+.usa_info{
+  padding:50px 0;
+}
+.usa_info .exp{
+  padding-top: 35px;
+}
+.usa_info .exp .pic{
+  padding-bottom: 20px;
+}
+.usa_info .exp .pic .media-left a{
+  width:140px;
+  height:110px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.usa_info .exp .pic .media-left a img{
+  width:100%;
+  height:100px;
+  object-fit: cover;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.usa_info .exp .pic .media-body>a{
+  color: #337ab7;
+  text-decoration: none;
+}
+.usa_info .exp .pic .media-body>a h4{
+  color: #0ba1e4;
+  height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+.usa_info .exp .pic .media-body .time{
+  color: #999;
+  padding:2px 0;
+  font-size: 12px;
+}
+.usa_info .exp .pic .media-body .text{
+  color: #919191;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.usa_info .exp .pic .media-body .writer{
+  color: #999;
+  padding:2px 0;
+  font-size: 12px;
+}
+.usa_info .exp .pic .media-body .details{
+  float: right;
+  font-weight: 400;
+  color: #999;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.usa_info .exp .pic .media-body .details:hover{
+  color: #f93;
+}
+.usa_info .more-info{
+  text-align: center;
+  padding-top:30px;
+}
+.usa_info .more-info a{
+  color: #337ab7;
+  font-size: 135%;
+  font-weight: 300;
+}
+.usa_info .more-info a:hover{
+  color: #23527c;
+}
+/*我们的客户*/
+.usa_friend{
+  background-color: #e1e1e1;
+  padding:50px 0;
+}
+.usa_friend .footer .our-client-logo{
+  text-align: center;
+  border: 1px solid #c1c1c1;
+  margin:20px auto;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.usa_friend .footer .our-client-logo:hover{
+  background-color: #fff;
+  border:1px solid #0ba1e4;
+  box-shadow: 0 0 10px 0 rgba(45,183,245,.5);
+}
+/*更多解答*/
+.usa_link{
+  background: -webkit-linear-gradient(top,#0076d1,#5db8ff);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.usa_link .row .plom{
+  padding: 30px 0;
+}
+.usa_link .row .plom h2{
+  display: block;
+  max-width: 10em;
+  margin: 0 auto;
+  line-height: 2em;
+  border-bottom: 2px solid #fff;
+  color: #f5f5f5;
+}
+.usa_link .row .plom h4{
+  color: #f1f1f1;
+  font-weight: 300;
+}
+.usa_link .row .plom a{
+  font-size: 24px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.usa_link .row .plom a:hover{
+  color: #0ba1e4;
+  background-color: #fff;
+}
+/*版权*/
+.usa_footer{
+  background-color: #363636;
+}
+.usa_footer .container .row .footer-info{
+  border-left: 2px solid #c1c1c1;
+  float: left;
+  height:160px;
+  margin: 40px 0;
+  overflow: hidden;
+  padding-left: 1em;
+  padding-right: 15px;
+}
+.usa_footer .container .row .footer-info .footer-list  h4{
+  color: #f5f5f5;
+}
+.usa_footer .container .row .footer-info .footer-list ul{
+  margin:20px 0 0;
+}
+.usa_footer .container .row .footer-info .footer-list ul li a{
+  color: #f5f5f5;
+  line-height: 2.5em;
+}
+.usa_footer .container .row .footer-info .footer-list p{
+  text-align: center;
+  color: #f5f5f5;
+  line-height: 2.5em;
+  margin:0 0 10px;
+}
+.usa_footer .container .row .footer-info .footer-list img{
+  max-width: 100%;
+  max-height: 132px;
+}
+@media (max-width: 767px) {
+  .usa_footer .container .row .footer-info .footer-list p{
+    text-align: left;
+  }
+}
+.usa_footer .container .row .footer-last{
+  height: 160px;
+  margin:40px 0;
+  padding-left: 1em;
+  border-left:2px solid #c1c1c1;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .usa_footer .container .row .footer-last{
+    border-right: 2px solid #c1c1c1;
+  }
+}
+.usa_footer .container .row .footer-last .footer-contact h2{
+  color: #fff;
+  margin: 0;
+  line-height: 52px;
+  font-weight: 300;
+  font-size: 30px;
+  font-family: inherit;
+}
+@media (min-width: 992px) {
+  .usa_footer .container .row .footer-last .footer-contact h2{
+    padding-left: 10px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .usa_footer .container .row .footer-last .footer-contact h2{
+    padding-left: 0;
+    font-size: 22px;
+  }
+}
+.usa_footer .container .row .footer-last .footer-contact h2 img{
+  width:40px;
+  height:40px;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+/*底部*/
+.usa_msg{
+  background-color: #666;
+}
+.usa_msg .container .row .msg{
+  text-align: center;
+}
+.usa_msg .container .row .msg p{
+  margin: 10px;
+  line-height: 40px;
+  color: #fafafa;
+}
+.usa_msg .container .row .msg a{
+  margin:0 auto;
+  display: block;
+  width:300px;
+  padding:20px 0;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+
